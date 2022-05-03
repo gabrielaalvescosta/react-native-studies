@@ -7,14 +7,14 @@ import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/
 
 function App() {
     return <Text>
-        <View>
-        <Primeiro/>
-        <ComponenteSemNomePadrao/>
-        <Componente2/>
-        <Componente3/>
-        {/* um comentário dentro do componente */}
-        </View>
-        </Text>
+            <View>
+            <Primeiro/>
+            <ComponenteSemNomePadrao/>
+            <Componente2/>
+            <Componente3/>
+            {/* um comentário dentro do componente */}
+            </View>
+          </Text>
 }
 
 export default App;

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Text } from 'react-native';
 
+// styles
+import Estilo from './estilo';
+
 
 // Por regra, deve-se evitar criar multi componentes no mesmo arquivo
-
 // Funcao default nao precisa de nome para ser exportada
 export default function () {
-    return <Text>Componente 1</Text>
+    return <Text style={Estilo.txtG}>Componente 1</Text>
 }
 
 // Funcao exportadas (nao default) precisam ter um nome para serem exportadas
