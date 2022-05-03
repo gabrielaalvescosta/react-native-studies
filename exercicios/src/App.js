@@ -1,9 +1,20 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+
+// components
 import Primeiro from './components/Primeiro';
+import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
 
 function App() {
-    return <Text><Primeiro/>Componente</Text>
+    return <Text>
+        <View>
+        <Primeiro/>
+        <ComponenteSemNomePadrao/>
+        <Componente2/>
+        <Componente3/>
+        {/* um comentário dentro do componente */}
+        </View>
+        </Text>
 }
 
 export default App;
