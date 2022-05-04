@@ -7,6 +7,7 @@ import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/
 import MinMax from './components/MinMax';
 import Aleatorio from './components/Aleatorio';
 import Titulo from './components/Titulo';
+import Botao from './components/Botao';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     return <Text>
             <View>
             <Titulo principal="Cadastro" secundario="Tela de Cadastro"/>
+            <Botao/>
             <MinMax min="3" max="8"/>
             <Aleatorio min={1} max={60} />
             <Primeiro/>
