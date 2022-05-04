@@ -5,6 +5,8 @@ import { Text, View } from 'react-native';
 import Primeiro from './components/Primeiro';
 import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
 import MinMax from './components/MinMax';
+import Aleatorio from './components/Aleatorio';
+import Titulo from './components/Titulo';
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
 
     return <Text>
             <View>
+            <Titulo principal="Cadastro" secundario="Tela de Cadastro"/>
             <MinMax min="3" max="8"/>
+            <Aleatorio min={1} max={60} />
             <Primeiro/>
             <ComponenteSemNomePadrao/>
             <Componente2/>
