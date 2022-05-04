@@ -4,10 +4,15 @@ import { Text, View } from 'react-native';
 // components
 import Primeiro from './components/Primeiro';
 import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
+import MinMax from './components/MinMax';
 
 function App() {
+
+    console.warn("Console.warn para debug");
+
     return <Text>
             <View>
+            <MinMax min="3" max="8"/>
             <Primeiro/>
             <ComponenteSemNomePadrao/>
             <Componente2/>
