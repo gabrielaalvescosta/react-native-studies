@@ -8,6 +8,7 @@ import MinMax from './components/MinMax';
 import Aleatorio from './components/Aleatorio';
 import Titulo from './components/Titulo';
 import Botao from './components/Botao';
+import Contador from './components/Contador';
 
 function App() {
 
@@ -17,13 +18,24 @@ function App() {
             <View>
             <Titulo principal="Cadastro" secundario="Tela de Cadastro"/>
             <Botao/>
+
+            {/* Abaixo um contador de valor inicial 100 e passo 10 e, embaixo dele um contador que usa os valores padrão que foram atribuidos nas props */}
+
+            <Contador inicial={100} passo={10}/>
+            <Contador/>
+
+            {/* Testando componentes com props min e max */}
+
             <MinMax min="3" max="8"/>
             <Aleatorio min={1} max={60} />
+
+
+            {/* testando componentes */}
+
             <Primeiro/>
             <ComponenteSemNomePadrao/>
             <Componente2/>
             <Componente3/>
-            {/* um comentário dentro do componente */}
             </View>
           </Text>
 }

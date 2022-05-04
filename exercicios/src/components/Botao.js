@@ -16,8 +16,12 @@ export default props => {
         <Button 
         title="Executar #02"
         onPress={function() {
-            console.warn('Executando a função anônima do botão 2')
+            console.warn('Executando a função anônima do botão 2 depois de clicado')
         }}
+        />
+        <Button 
+        title="Executar #03"
+        onPress={() => {console.warn('Executando a arrow function do botão 3')}}
         />
         </>
     )
