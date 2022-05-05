@@ -9,12 +9,17 @@ import Aleatorio from './components/Aleatorio';
 import Titulo from './components/Titulo';
 import Botao from './components/Botao';
 import Contador from './components/Contador';
+import Pai from './components/indireta/Pai';
 
 function App() {
 
     // console.warn("Console.warn para debug");
 
-    return (<Text>
+    return (
+            <>
+            <Pai/>
+           
+            {/* <Text>
             <View>
 
             <Titulo principal="Cadastro" secundario="Tela de Cadastro"/>
@@ -28,7 +33,8 @@ function App() {
             <Componente2/>
             <Componente3/>
             </View>
-          </Text>)
+          </Text> */}
+          </>)
 }
 
 export default App;
