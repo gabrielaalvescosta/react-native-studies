@@ -3,7 +3,7 @@ import { Button, Text } from 'react-native';
 
 
 // passando as props inicial e passo que estão no App.js
-export default ({ inicial = 1, passo = 0 })=> {
+export default ({ inicial, passo }) => {
 
     // Destructuring da variavel numero com estado inicial de valor props.inicial (que é igual a 100).
 
