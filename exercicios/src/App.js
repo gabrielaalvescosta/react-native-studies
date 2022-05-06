@@ -1,15 +1,15 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
+import ContadorV2 from './components/contador/ContadorV2';
 
 // components
-import Primeiro from './components/Primeiro';
-import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
-import MinMax from './components/MinMax';
-import Aleatorio from './components/Aleatorio';
-import Titulo from './components/Titulo';
-import Botao from './components/Botao';
-import Contador from './components/Contador';
-import Pai from './components/indireta/Pai';
+// import Primeiro from './components/Primeiro';
+// import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
+// import MinMax from './components/MinMax';
+// import Aleatorio from './components/Aleatorio';
+// import Titulo from './components/Titulo';
+// import Botao from './components/Botao';
+// import Contador from './components/Contador';
 
 function App() {
 
@@ -17,8 +17,10 @@ function App() {
 
     return (
             <>
-            <Pai/>
-           
+            <ContadorV2 />
+           <Text>
+               Contador
+           </Text>
             {/* <Text>
             <View>
 
