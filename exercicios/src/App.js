@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
-import ContadorV2 from './components/contador/ContadorV2';
+// import ContadorV2 from './components/contador/ContadorV2';
+import Diferenciar from './components/Diferenciar';
+import Parimpar from './components/Parimpar';
 
 // components
 // import Primeiro from './components/Primeiro';
@@ -17,11 +19,13 @@ function App() {
 
     return (
             <>
-            <ContadorV2 />
+            <Parimpar num={3} />
+            <Diferenciar/>
+            {/* <ContadorV2 />
            <Text>
                Contador
            </Text>
-            {/* <Text>
+            <Text>
             <View>
 
             <Titulo principal="Cadastro" secundario="Tela de Cadastro"/>
