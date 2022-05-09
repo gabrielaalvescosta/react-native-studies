@@ -5,12 +5,11 @@ import Quadrado from './Quadrado';
 export default props => {
     return(
         <View style={style.FlexV2}>
-            <Quadrado cor={'#ff0999'}/>
-            <Quadrado cor={'#787878'}/>
-            <Quadrado cor={'#f77999'}/>
-            <Quadrado cor={'#ddee44'}/>
-            <Quadrado cor={'#ee7734'}/>
-            <Quadrado cor={'#ea7899'}/>
+            <Quadrado cor={'#ff0999'} lado={30}/>
+            <Quadrado cor={'#787878'} lado={40}/>
+            <Quadrado cor={'#f77999'} lado={50}/>
+            <Quadrado cor={'#ddee44'} lado={60}/>
+            <Quadrado cor={'#ee7734'} lado={80}/>
         </View>
     )
 
@@ -20,7 +19,8 @@ const style = StyleSheet.create({
     FlexV2: {
         width: '100%',
         flex: 1,
-        alignItems: 'stretch',
+        flexDirection: 'row',
+        alignItems: 'center',
         backgroundColor: '#000',
         justifyContent: 'space-between'
     }
