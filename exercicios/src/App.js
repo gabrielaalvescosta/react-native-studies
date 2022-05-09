@@ -3,11 +3,12 @@ import { Text } from 'react-native';
 import UsuarioLogado from './components/condicional/UsuarioLogado';
 // import ContadorV2 from './components/contador/ContadorV2';
 import Diferenciar from './components/Diferenciar';
-import Familia from './components/familia/Familia';
-import Membros from './components/familia/Membros';
-import Parimpar from './components/Parimpar';
+// import Familia from './components/familia/Familia';
+// import Membros from './components/familia/Membros';
+// import Parimpar from './components/Parimpar';
+import ListaProdutos from './components/produtos/ListaProdutos';
 
-// components
+
 // import Primeiro from './components/Primeiro';
 // import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
 // import MinMax from './components/MinMax';
@@ -23,6 +24,7 @@ function App() {
     return (
             <>
             <UsuarioLogado usuario={{nome: 'João', email: 'joao@joao.com.br'}} />
+            <ListaProdutos/>
             {/* 
             
                         <Parimpar num={3} />
