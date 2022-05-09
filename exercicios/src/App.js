@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from 'react-native';
+import UsuarioLogado from './components/condicional/UsuarioLogado';
 // import ContadorV2 from './components/contador/ContadorV2';
 import Diferenciar from './components/Diferenciar';
 import Familia from './components/familia/Familia';
@@ -21,7 +22,10 @@ function App() {
 
     return (
             <>
-            <Parimpar num={3} />
+            <UsuarioLogado usuario={{nome: 'João', email: 'joao@joao.com.br'}} />
+            {/* 
+            
+                        <Parimpar num={3} />
             <Diferenciar/>
             <Familia>
                 <Membros nome="Susana" sobrenome="Paiva" />
@@ -30,7 +34,7 @@ function App() {
             <Familia>
                 <Membros nome="Marília" sobrenome="José"/>
             </Familia>
-            {/* <ContadorV2 />
+            <ContadorV2 />
            <Text>
                Contador
            </Text>
