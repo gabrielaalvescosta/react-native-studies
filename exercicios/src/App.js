@@ -2,6 +2,8 @@ import React from 'react';
 import { Text } from 'react-native';
 // import ContadorV2 from './components/contador/ContadorV2';
 import Diferenciar from './components/Diferenciar';
+import Familia from './components/familia/Familia';
+import Membros from './components/familia/Membros';
 import Parimpar from './components/Parimpar';
 
 // components
@@ -21,6 +23,13 @@ function App() {
             <>
             <Parimpar num={3} />
             <Diferenciar/>
+            <Familia>
+                <Membros nome="Susana" sobrenome="Paiva" />
+                <Membros nome="Joana" sobrenome="Paiva" />
+            </Familia>
+            <Familia>
+                <Membros nome="Marília" sobrenome="José"/>
+            </Familia>
             {/* <ContadorV2 />
            <Text>
                Contador

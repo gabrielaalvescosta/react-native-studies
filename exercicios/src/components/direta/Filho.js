@@ -2,14 +2,14 @@ import React from 'react';
 import { Text } from 'react-native';
 import Estilo from '../estilo';
 
-export default ({ mensagem, outraMensagem }) => {
+export default ({ nome, sobrenome }) => {
        return (
            <>
            <Text style={Estilo.txtG}>
-                {mensagem}
+                {nome} {sobrenome}
            </Text>
            <Text style={Estilo.txtG}>
-                {outraMensagem}
+                {nome} {sobrenome}
            </Text>
            </>
        )

@@ -7,6 +7,9 @@ export default props => {
     let y = 233 
 
        return  (
-        <Filho mensagem="Olá" outraMensagem="Mundo" soma={y + 10} subtracao={y - x}/>
+           <>
+        <Filho nome="Laura" sobrenome="Souza" />
+        <Filho nome="Valentina" sobrenome="Souza" />
+        </>
        ) 
 }
