@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import FlexboxV2 from './components/flexbox/FlexboxV2';
+import FlexboxV4 from './components/flexbox/FlexboxV4';
 // import UsuarioLogado from './components/condicional/UsuarioLogado';
 // import ContadorV2 from './components/contador/ContadorV2';
 // import Diferenciar from './components/Diferenciar';
@@ -23,7 +23,7 @@ function App() {
 
     return (
             <SafeAreaView style={style.App}>
-            <FlexboxV2/>
+            <FlexboxV4/>
             {/* 
             <DigiteSeuNome/>
             <UsuarioLogado usuario={{nome: 'João', email: 'joao@joao.com.br'}} />
@@ -86,5 +86,6 @@ const style = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         padding: 20
+        
     }
 })
