@@ -3,8 +3,7 @@ import Filho from './Filho';
 
 export default props => {
 
-    let x = 100
-    let y = 233 
+        
 
        return  (
            <>

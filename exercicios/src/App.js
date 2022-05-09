@@ -1,5 +1,6 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import FlexboxV2 from './components/flexbox/FlexboxV2';
 // import UsuarioLogado from './components/condicional/UsuarioLogado';
 // import ContadorV2 from './components/contador/ContadorV2';
 // import Diferenciar from './components/Diferenciar';
@@ -14,17 +15,17 @@ import { SafeAreaView } from 'react-native';
 // import Titulo from './components/Titulo';
 // import Botao from './components/Botao';
 // import Contador from './components/Contador';
-
-import DigiteSeuNome from './components/controlled/DigiteSeuNome';
+// import DigiteSeuNome from './components/controlled/DigiteSeuNome';
 
 function App() {
 
     // console.warn("Console.warn para debug");
 
     return (
-            <SafeAreaView>
-            <DigiteSeuNome/>
+            <SafeAreaView style={style.App}>
+            <FlexboxV2/>
             {/* 
+            <DigiteSeuNome/>
             <UsuarioLogado usuario={{nome: 'João', email: 'joao@joao.com.br'}} />
             <ListaProdutosV2/>
             <ListaProdutos/>
@@ -78,3 +79,12 @@ COMPONENTE COMPACTO EM 1 LINHA - ARROW FUNCTION
 export default () => <Text>Componente usando arrow function</Text>
 
 */
+
+const style = StyleSheet.create({
+    App: {
+        flexGrow: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20
+    }
+})
