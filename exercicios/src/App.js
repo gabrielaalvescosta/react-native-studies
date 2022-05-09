@@ -1,14 +1,12 @@
 import React from 'react';
-import { Text } from 'react-native';
-import UsuarioLogado from './components/condicional/UsuarioLogado';
+import { SafeAreaView } from 'react-native';
+// import UsuarioLogado from './components/condicional/UsuarioLogado';
 // import ContadorV2 from './components/contador/ContadorV2';
-import Diferenciar from './components/Diferenciar';
+// import Diferenciar from './components/Diferenciar';
 // import Familia from './components/familia/Familia';
 // import Membros from './components/familia/Membros';
 // import Parimpar from './components/Parimpar';
-import ListaProdutos from './components/produtos/ListaProdutos';
-
-
+// import ListaProdutos from './components/produtos/ListaProdutos';
 // import Primeiro from './components/Primeiro';
 // import ComponenteSemNomePadrao, { Componente2, Componente3 } from './components/Multi';
 // import MinMax from './components/MinMax';
@@ -17,15 +15,18 @@ import ListaProdutos from './components/produtos/ListaProdutos';
 // import Botao from './components/Botao';
 // import Contador from './components/Contador';
 
+import DigiteSeuNome from './components/controlled/DigiteSeuNome';
+
 function App() {
 
     // console.warn("Console.warn para debug");
 
     return (
-            <>
+            <SafeAreaView>
+            <DigiteSeuNome/>
+            {/* 
             <UsuarioLogado usuario={{nome: 'João', email: 'joao@joao.com.br'}} />
             <ListaProdutosV2/>
-            {/* 
             <ListaProdutos/>
                         <Parimpar num={3} />
             <Diferenciar/>
@@ -55,7 +56,7 @@ function App() {
             <Componente3/>
             </View>
           </Text> */}
-          </>)
+          </SafeAreaView>)
 }
 
 export default App;
