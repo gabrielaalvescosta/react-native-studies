@@ -24,9 +24,9 @@ function App() {
     return (
             <>
             <UsuarioLogado usuario={{nome: 'João', email: 'joao@joao.com.br'}} />
-            <ListaProdutos/>
+            <ListaProdutosV2/>
             {/* 
-            
+            <ListaProdutos/>
                         <Parimpar num={3} />
             <Diferenciar/>
             <Familia>
