@@ -6,7 +6,7 @@ export default class Mega extends React.Component {
     render() {
         return (
             <View style={Estilo.txtG}>
-              <Text>React Native Class Component</Text>
+              <Text>{this.props.qtDeNumeros}</Text>
             </View>
         )
     }

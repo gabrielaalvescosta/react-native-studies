@@ -24,7 +24,7 @@ function App() {
 
     return (
             <SafeAreaView style={style.App}>
-            <Mega/>
+            <Mega qtDeNumeros={5}/>
             {/* 
             <FlexboxV4/>
             <DigiteSeuNome/>
