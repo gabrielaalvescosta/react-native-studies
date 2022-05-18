@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import { SafeAreaView, Text, StyleSheet } from 'react-native';
+import Simples from './componentes/Simples';
 
 
 export default class App extends React.Component {
 
-    // console.warn("Console.warn para debug");
     render() {
     return (
             <SafeAreaView style={styles.App}>
             <Text style={styles.t20}> App.js</Text>
+            <Simples texto="Flexível"/>
             </SafeAreaView>)
     }
 
