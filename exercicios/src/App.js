@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { SafeAreaView, Text, StyleSheet } from 'react-native';
 import Simples from './componentes/Simples';
-
+import Array from './componentes/Array';
 
 export default class App extends React.Component {
 
@@ -10,6 +10,7 @@ export default class App extends React.Component {
             <SafeAreaView style={styles.App}>
             <Text style={styles.t20}> App.js</Text>
             <Simples texto="Flexível"/>
+            <Array/>
             </SafeAreaView>)
     }
 
