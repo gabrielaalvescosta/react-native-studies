@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { SafeAreaView, Text, StyleSheet } from 'react-native';
 import Simples from './componentes/Simples';
 import Array from './componentes/Array';
 import ParImpar from './componentes/ParImpar';
+import { Inverter } from './componentes/Export';
 
 export default class App extends React.Component {
 
@@ -12,6 +13,7 @@ export default class App extends React.Component {
             <Text style={styles.t20}> App.js</Text>
             <Simples texto="Flexível"/>
             <Array/>
+            <Inverter texto="React Native"/>
             <ParImpar numero={40}/>
             </SafeAreaView>)
     }
