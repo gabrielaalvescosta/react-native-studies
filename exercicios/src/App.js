@@ -8,7 +8,7 @@ import { Inverter } from './componentes/Export';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import Home from './pages/Home';
 
 function HomeScreen() {
     return (
@@ -25,8 +25,12 @@ function App() {
 
     return (
             <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Navigator initialRouteName='Home'>
+                <Stack.Screen 
+                      name="Home" 
+                      component={Home}
+                      options={{ title: 'Topo do app' }} 
+                />
             </Stack.Navigator>
             </NavigationContainer>
             )
