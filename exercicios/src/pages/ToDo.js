@@ -2,16 +2,17 @@ import React from 'react';
 import { Text, View, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
-const NavigateToToDo = props => {
-        props.navigation.navigate('ToDo');
+const NavigateToHome = props => {
+    props.navigation.navigate('Home');
 }
 
 
 export default props => {
     return (
         <View>
-            <Text>Homepage</Text>
-            <Button title="Press to go to To Do Screen" onPress={() => NavigateToToDo(props)} />
+            <Text>To do list</Text>
+            <Button title="Press to go to Home Screen" onPress={() => NavigateToHome(props)} />
         </View>
+        
     );
 }

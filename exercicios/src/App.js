@@ -1,25 +1,27 @@
 import React from 'react';
 import { SafeAreaView, Text, View, StyleSheet } from 'react-native';
-import Simples from './componentes/Simples';
-import Array from './componentes/Array';
-import ParImpar from './componentes/ParImpar';
-import { Inverter } from './componentes/Export';
 
 
+// import Simples from './componentes/Simples';
+// import Array from './componentes/Array';
+// import ParImpar from './componentes/ParImpar';
+// import { Inverter } from './componentes/Export';
+
+
+// rotas - react navigation
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './pages/Home';
 
-function HomeScreen() {
-    return (
-      <View style={{flex: 1, color: '#333', alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Home Screen</Text>
-      </View>
-    );
-  }
+// paginas
+import Home from './pages/Home';
+import ToDo from './pages/ToDo';
+
   
 const Stack = createNativeStackNavigator(); 
 
+
+// Atentar para nomear "name" com o mesmo nome do componente para a rota ser encontrada
+// Title é o nome que será encontrado no topo do app quando abrir a página
 
 function App() {
 
@@ -29,7 +31,12 @@ function App() {
                 <Stack.Screen 
                       name="Home" 
                       component={Home}
-                      options={{ title: 'Topo do app' }} 
+                      options={{ title: 'Home: no topo da página' }} 
+                />
+                <Stack.Screen 
+                      name="ToDo" 
+                      component={ToDo}
+                      options={{ title: 'ToDo: não tem nada a ver com o name ToDo no props name' }} 
                 />
             </Stack.Navigator>
             </NavigationContainer>
