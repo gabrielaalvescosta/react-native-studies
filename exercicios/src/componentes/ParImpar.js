@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import PropTypes, { number } from 'prop-types';
 
 import If from './If';
 import Padrao from '../estilo/Padrao';
@@ -19,7 +20,7 @@ function parOuImpar(num) {
 
 // para usarmos a funcao, basta usar chaves e adicionar a props no parametro da funcao
 
-export default props => {
+const ParImpar = (props) => {
     return (
         <View>
 
@@ -38,3 +39,11 @@ export default props => {
         </View>
     )
 }
+
+
+ParImpar.propTypes = {
+        // proptypes de props numero será obrigatoriamente um number, caso contrario aparecera uma mensagem de erro
+        numero: number.isRequired,
+}
+
+export default ParImpar;
