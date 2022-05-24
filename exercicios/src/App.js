@@ -31,7 +31,7 @@ function App() {
                 <Stack.Screen 
                       name="Home" 
                       component={Home}
-                      options={{ title: 'Home: no topo da página' }} 
+                      options={{ title: 'Home: escrito no topo da página' }} 
                 />
                 <Stack.Screen 
                       name="ToDo" 
